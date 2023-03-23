@@ -1,6 +1,8 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
+features:
+  - grafting
 dataSources:
   - kind: ethereum/contract
     name: Fees
@@ -11,7 +13,7 @@ dataSources:
       startBlock: 217538
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - Fees
